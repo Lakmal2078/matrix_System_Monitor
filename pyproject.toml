@@ -4,15 +4,27 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "matrix-system-monitor"
-version = "1.0.0"
-description = "A system monitoring tool"
+version = "3.0.0"
+description = "🔥 MATRIX SYSTEM MONITOR v3.0 - Full Featured System Monitoring Tool"
 readme = "README.md"
 requires-python = ">=3.8"
 authors = [
     {name = "Lakmal2078"}
 ]
 license = {text = "MIT"}
-keywords = ["monitoring", "system"]
+keywords = ["monitoring", "system", "cpu", "gpu"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+]
+dependencies = [
+    "psutil",
+]
+
+# 🚀 මේකෙන් තමයි terminal එකේ 'pymonitor' ගැහුවම run වෙන්න හදන්නේ:
+[project.scripts]
+pymonitor = "pymonitor_full:main"
 
 [project.urls]
 Homepage = "https://github.com/Lakmal2078/matrix_System_Monitor"
