@@ -705,10 +705,11 @@ def show_help():
     input(f"{CYAN}Press Enter to continue...{RESET}")
 
 # =====================================================
-# MAIN ENTRY POINT
+# MAIN ENTRY POINT FOR TERMINAL COMMAND
 # =====================================================
 
-if __name__ == "__main__":
+def main():
+    """GitHub Actions සහ Terminal Command එක සඳහා ප්‍රධාන Entry Point එක"""
     if len(sys.argv) > 1:
         if sys.argv[1] == '--monitor':
             monitor()
@@ -719,3 +720,7 @@ if __name__ == "__main__":
             sys.exit(1)
     else:
         show_menu()
+
+if __name__ == "__main__":
+    main()
+    
